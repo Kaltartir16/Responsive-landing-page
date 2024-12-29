@@ -25,3 +25,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Responsive-landing-page
+A responsive landing page , crafted to deliver a seamless user experience across all devices. With a modern design, intuitive navigation, and optimized layouts, it highlights your brand’s offerings effectively. Perfectly tailored for desktops, tablets, and mobiles, it ensures your audience stays engaged anywhere, anytime.
