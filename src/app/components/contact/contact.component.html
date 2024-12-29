@@ -1,0 +1,49 @@
+<section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p class="subtitle">
+        Reach out to us for any inquiries or just to say hello!
+      </p>
+      <ul>
+        <li>
+          <mat-icon>location_on</mat-icon>
+          1234 Street Name, City, Country
+        </li>
+        <li>
+          <mat-icon>phone</mat-icon>
+          +1 (234) 567-890
+        </li>
+        <li>
+          <mat-icon>email</mat-icon>
+          info@myapp.com
+        </li>
+      </ul>
+    </div>
+    <div class="contact-form">
+      <form>
+        <h3>Send Us a Message</h3>
+        <mat-form-field  appearance="fill">
+          <mat-label>Your Name</mat-label>
+          <input matInput placeholder="Name" required />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Your Email</mat-label>
+          <input matInput type="email" placeholder="Email" required />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Your Message</mat-label>
+          <textarea
+            matInput
+            placeholder="Write your message here..."
+            rows="5"
+            required
+          ></textarea>
+        </mat-form-field>
+        <div class="form-footer">
+          <button mat-raised-button color="primary">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

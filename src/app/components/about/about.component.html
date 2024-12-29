@@ -1,0 +1,16 @@
+<section class="about-section">
+  <div class="container" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="2rem" fxLayout.lt-md="column">
+    <!-- About Text Section -->
+    <div class="about-text" fxFlex="50%" fxFlex.lt-md="100%" [@fadeInLeft]>
+      <h2>About Us</h2>
+      <p>
+        At <strong>Your IT Company</strong>, we are passionate about delivering innovative IT solutions tailored to your business needs. Our team of experts excels in providing top-notch services in software development, cloud computing, IT infrastructure, and cybersecurity. Partner with us to take your digital transformation journey to the next level.
+      </p>
+      <button mat-raised-button color="primary" class="about-btn">Learn More</button>
+    </div>
+    <!-- About Image Section -->
+    <div class="about-image" fxFlex="50%" fxFlex.lt-md="100%" [@fadeInRight]>
+      <img [src]="aboutImagePath" alt="About Us">
+    </div>
+  </div>
+</section>

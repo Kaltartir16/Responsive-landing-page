@@ -1,0 +1,17 @@
+<section class="services-section">
+  <div class="container">
+    <h2>Our Services</h2>
+    <p class="services-description">
+      We provide a wide range of IT services to help businesses thrive in the digital age. Explore our expertise and discover how we can empower your success.
+    </p>
+    <div fxLayout="row" fxLayoutWrap fxLayoutAlign="center" fxLayoutGap="2rem">
+      <div fxFlex="100%" fxFlex.gt-sm="45%" fxFlex.gt-md="30%" class="service-card" *ngFor="let service of services">
+        <div class="service-icon">
+          <mat-icon>{{ service.icon }}</mat-icon>
+        </div>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>

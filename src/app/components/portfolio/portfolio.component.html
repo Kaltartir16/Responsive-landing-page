@@ -1,0 +1,27 @@
+<section class="portfolio-section">
+  <div class="container">
+    <h2>Our Portfolio</h2>
+    <div
+      fxLayout="row"
+      fxLayoutWrap
+      fxLayoutGap="1rem"
+      class="portfolio-grid"
+    >
+      <div
+        fxFlex="100%"
+        fxFlex.gt-sm="45%"
+        fxFlex.gt-md="30%"
+        class="portfolio-item"
+        *ngFor="let project of projects"
+      >
+        <mat-card class="portfolio-card">
+          <img mat-card-image [src]="project.image" [alt]="project.title" />
+          <mat-card-content>
+            <h3>{{ project.title }}</h3>
+            <p class="description">{{ project.description }}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>

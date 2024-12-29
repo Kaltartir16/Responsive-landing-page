@@ -1,0 +1,29 @@
+<!-- founders.component.html -->
+<section class="founders-section">
+  <div class="container">
+    <h2>Our Founders</h2>
+    <div
+      fxLayout="row"
+      fxLayoutWrap
+      fxLayoutGap="1rem"
+      class="founders-grid"
+    >
+      <div
+        fxFlex="100%"
+        fxFlex.gt-sm="45%"
+        fxFlex.gt-md="30%"
+        class="founder-card"
+        *ngFor="let founder of founders"
+      >
+        <mat-card class="founder-card-inner">
+          <img mat-card-image [src]="founder.photo" [alt]="founder.name" />
+          <mat-card-content>
+            <h3>{{ founder.name }}</h3>
+            <p class="position">{{ founder.position }}</p>
+            <p class="bio">{{ founder.bio }}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>

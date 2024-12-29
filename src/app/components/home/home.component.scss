@@ -1,0 +1,15 @@
+/* home.component.scss */
+.section {
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    padding: 4rem 2rem;
+  }
+
+  // Optional: Alternate background colors for different sections
+  &:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+}
