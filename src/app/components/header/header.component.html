@@ -1,6 +1,18 @@
+
 <mat-toolbar color="primary" class="header-toolbar">
+
+  <!-- Hamburger Button -->
+  <div class="hamburger-button" >
+    <button mat-icon-button (click)="toggleSidenav()" >
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
   <span class="logo">MyApp</span>
   <span class="spacer"></span>
+
+
+  <!-- Desktop Menu -->
   <nav class="desktop-menu">
     <a mat-button class="menu-button" routerLink="/" routerLinkActive="active-link">Home</a>
     <a mat-button routerLink="/" fragment="about">About</a>
@@ -9,3 +21,20 @@
     <a mat-button routerLink="/" fragment="contact">Contact</a>
   </nav>
 </mat-toolbar>
+
+<!-- Sidenav -->
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" [(opened)]="sidenavOpened">
+    <mat-nav-list>
+      <div class="d-flex flex-column gap-2">
+        <a  routerLink="/" routerLinkActive="active-link">Home</a>
+        <a  routerLink="/" fragment="about">About</a>
+        <a  routerLink="/" fragment="services">Services</a>
+        <a  routerLink="/" fragment="portfolio">Portfolio</a>
+        <a  routerLink="/" fragment="contact">Contact</a>
+      </div>
+
+    </mat-nav-list>
+  </mat-sidenav>
+
+</mat-sidenav-container>
